@@ -1,0 +1,596 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700i,900&amp;subset=cyrillic"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/libs.min.css"> <!-- Подключаем CSS -->
+    <link rel="stylesheet" href="css/main.css"> <!-- Подключаем CSS -->
+
+
+</head>
+<body>
+<header id='header' class='header'>
+    <div class="container-fluid">
+        <div class="row justify-content-between align-items-center">
+            <div class="col-lg-3">
+                <img src="img/Logo_1.png" alt="logo" class="logo">
+            </div>
+            <div class="col-lg-4 description text-center">
+                - всё про содержание, ремонт и строительство автомобильных дорог
+            </div>
+
+            <div class="col-lg-3 offset-lg-2">
+
+
+                <ul class="nav registr">
+                    <li class="nav-item registr__item">
+                        <a class="nav-link active" href="#">Регистрация</a>
+                    </li>
+                    <li class="nav-item registr__item">
+                        <a class="nav-link" href="#">Войти</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<!--ВЕРХНЯЯ НАВИГАЦИОННАЯ ПАНЕЛЬ-->
+<nav id='menu' class="menu navbar navbar-expand-lg">
+    <a class="navbar-brand" href="#" style="color: #ef6c00">Avtodorogi.by</a> <!--изменил цвет брэнда-->
+    <!--изменил цвет тогглера-->
+    <button style="background-color: #ef6c00" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style="color: #ffffff"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Новости <span class="sr-only">(current)</span></a>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle dropdown-toggle-split" href="#" id="navbarDropdown" role="button"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Технологии
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Содержание</a>
+                    <a class="dropdown-item" href="#">Ремонт</a>
+                    <a class="dropdown-item" href="#">Строительство</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Проектирование</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle dropdown-toggle-split" href="#" id="navbarDropdown" role="button"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Техника
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Автобитумовоз</a>
+                    <a class="dropdown-item" href="#">Автогудронатор</a>
+                    <a class="dropdown-item" href="#">Автогрейдер</a>
+                    <a class="dropdown-item" href="#">Автосамосвал</a>
+                    <a class="dropdown-item" href="#">Асфальтоукладчик</a>
+                    <a class="dropdown-item" href="#">Бульдозер</a>
+                    <a class="dropdown-item" href="#">Каток</a>
+                    <a class="dropdown-item" href="#">Поливо-моечная</a>
+                    <a class="dropdown-item" href="#">Погрузчик</a>
+                    <a class="dropdown-item" href="#">Скрепер</a>
+                    <a class="dropdown-item" href="#">Экскаватор</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle dropdown-toggle-split" href="#" id="navbarDropdown" role="button"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Библиотека
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">ТНПА</a>
+                    <a class="dropdown-item" href="#">Книги</a>
+                    <a class="dropdown-item" href="#">Научные статьи</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle dropdown-toggle-split" href="#" id="navbarDropdown" role="button"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Студентам
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Контрольные</a>
+                    <a class="dropdown-item" href="#">Курсовые</a>
+                    <a class="dropdown-item" href="#">Дипломы</a>
+                </div>
+            </li>
+        </ul>
+        <form class="search form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Поиск..." aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Найти</button>
+        </form>
+    </div>
+</nav>
+
+<!--КАРУСЕЛЬ-->
+<div id="carouselImages" class="container carouselImages">
+    <!-- Контейнер для слайдера -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <!-- Контейнер для иконок каждого слайда -->
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <!-- Контейнер для слайдов -->
+            <div class="carousel-item active">
+                <img src="img/Содержание зима.jpg" alt="Очистка от снега">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Зимнее содержание дорог</h5>
+                    <p>Очистка от снега</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="img/Содержание лето.jpg" alt="Окоска">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Летнее содержание дорог</h5>
+                    <p>Окоска</p>
+                </div>
+
+            </div>
+
+            <div class="carousel-item">
+                <img src="img/Ямочный.jpg" alt="Ямочный ремонт">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Ямочный ремонт дороги</h5>
+                    <p>Ремонтер HYDROG PATCHER PA 5000</p>
+                </div>
+            </div>
+        </div>
+        <!-- Контейнер для переключателей между слайдами -->
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+<!--ПОЗДРАВЛЕНИЯ-->
+<section id='congratulations' class="container-fluid congratulations">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="text-center">29 октября - ДЕНЬ АВТОМОБИЛИСТА И ДОРОЖНИКА!!!</h1>
+        </div>
+        <div class="col-lg-8">
+            <img src="img/день дорожника.jpg" alt="День дорожника" class="img-fluid img-thumbnail">
+        </div>
+        <div class="col-lg-4" id="div_pozdr">
+            <p class="text-center">День автомобилиста — это профессиональный праздник не только водителей, но и
+                ремонтных рабочих, инженерно-технических работников, руководителей автотранспортных предприятий и всех,
+                кто добросовестно трудится, выполняя свой профессиональный долг. Без преданности профессии этих людей и
+                их чувства ответственности за дело невозможна повседневная жизнь города и его жителей.<br>
+                <b>С ПРАЗДНИКОМ, ДОРОГИЕ ДРУЗЬЯ!!!</b>
+            </p>
+        </div>
+    </div>
+</section>
+<!--БОЛЬШОЕ МЕНЮ-->
+<nav class="container-fluid bigMenu" id="bigMenu">
+    <div class="row card-deck">
+        <!--ДОРОЖНЫЕ НОВОСТИ-->
+        <div class="col-lg-4">
+            <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                <div class="mainflip">
+                    <div class="card bigCardMenu frontside"> <!--Лицевая сторона карточки-->
+                        <div class="card-body text-center">
+                            <p>
+                                <!--https://bootsnipp.com/snippets/featured/team-design-card-flipper-using-bootstrap-4-->
+                                <img class="img-fluid" src="img/Новости.png" alt="новости">
+                            </p>
+                            <h2 class="card-title">ДОРОЖНЫЕ НОВОСТИ</h2>
+                        </div>
+                    </div>
+                    <div class="backside"><!--Обратная сторона карточки-->
+                        <div class="card">
+                            <div class="card-body text-center mt-4">
+                                <h2 class="card-title">ДОРОЖНЫЕ НОВОСТИ</h2>
+                                <p class="card-text">В этом блоке вы сможете прочитать про все актуальные новости в
+                                    дорожной отрасли</p>
+                                <a href="#">ЧИТАТЬ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--ДОРОЖНО-СТРОИТЕЛЬНЫЕ ОРГАНИЗАЦИИ-->
+        <div class="col-lg-4">
+            <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                <div class="mainflip">
+                    <div class="card bigCardMenu frontside"> <!--Лицевая сторона карточки-->
+                        <div class="card-body text-center">
+                            <p>
+                                <!--https://bootsnipp.com/snippets/featured/team-design-card-flipper-using-bootstrap-4-->
+                                <img class="img-fluid" src="img/Организации.png" alt="Организации">
+                            </p>
+                            <h2 class="card-title">ДОРОЖНО-СТРОИТЕЛЬНЫЕ ОРГАНИЗАЦИИ</h2>
+                        </div>
+                    </div>
+                    <div class="backside"><!--Обратная сторона карточки-->
+                        <div class="card">
+                            <div class="card-body text-center mt-4">
+                                <h2 class="card-title">ДОРОЖНО-СТРОИТЕЛЬНЫЕ ОРГАНИЗАЦИИ</h2>
+                                <p class="card-text">В этом блоке вы сможете прочитать про все дорожно-строительные
+                                    организации РБ</p>
+                                <a href="#">ЧИТАТЬ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--ТЕХНОЛОГИИ ПРОИЗВОДСТВА РАБОТ-->
+        <div class="col-lg-4">
+            <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                <div class="mainflip">
+                    <div class="card bigCardMenu frontside"> <!--Лицевая сторона карточки-->
+                        <div class="card-body text-center">
+                            <p>
+                                <!--https://bootsnipp.com/snippets/featured/team-design-card-flipper-using-bootstrap-4-->
+                                <img class="img-fluid" src="img/Ремонт.png" alt="ремонт">
+                            </p>
+                            <h2 class="card-title">ТЕХНОЛОГИИ ПРОИЗВОДСТВА РАБОТ</h2>
+                        </div>
+                    </div>
+                    <div class="backside"><!--Обратная сторона карточки-->
+                        <div class="card">
+                            <div class="card-body text-center mt-4">
+                                <h2 class="card-title">ТЕХНОЛОГИИ ПРОИЗВОДСТВА РАБОТ</h2>
+                                <p class="card-text">В этом блоке вы сможете прочитать про различные технологии ремонта
+                                    и строительства автомобильных дорог</p>
+                                <a href="#">ЧИТАТЬ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--ДОРОЖНО-СТРОИТЕЛЬНАЯ ТЕХНИКА-->
+        <div class="col-lg-4">
+            <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                <div class="mainflip">
+                    <div class="card bigCardMenu frontside"> <!--Лицевая сторона карточки-->
+                        <div class="card-body text-center">
+                            <p>
+                                <!--https://bootsnipp.com/snippets/featured/team-design-card-flipper-using-bootstrap-4-->
+                                <img class="img-fluid" src="img/Машины.png" alt="машины">
+                            </p>
+                            <h2 class="card-title">ДОРОЖНО-СТРОИТЕЛЬНАЯ ТЕХНИКА</h2>
+                        </div>
+                    </div>
+                    <div class="backside"><!--Обратная сторона карточки-->
+                        <div class="card">
+                            <div class="card-body text-center mt-4">
+                                <h2 class="card-title">ДОРОЖНО-СТРОИТЕЛЬНАЯ ТЕХНИКА</h2>
+                                <p class="card-text">В этом блоке вы сможете почитать про дорожно-строительную
+                                    технику</p>
+                                <a href="#">ЧИТАТЬ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--НОРМАТИВНО-ТЕХНИЧЕСКАЯ ЛИТЕРАТУРА-->
+        <div class="col-lg-4">
+            <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                <div class="mainflip">
+                    <div class="card bigCardMenu frontside"> <!--Лицевая сторона карточки-->
+                        <div class="card-body text-center">
+                            <p>
+                                <!--https://bootsnipp.com/snippets/featured/team-design-card-flipper-using-bootstrap-4-->
+                                <img class="img-fluid" src="img/Библиотека.png" alt="библиотека">
+                            </p>
+                            <h2 class="card-title">НОРМАТИВНО-ТЕХНИЧЕСКАЯ ЛИТЕРАТУРА</h2>
+                        </div>
+                    </div>
+                    <div class="backside"><!--Обратная сторона карточки-->
+                        <div class="card">
+                            <div class="card-body text-center mt-4">
+                                <h2 class="card-title">НОРМАТИВНО-ТЕХНИЧЕСКАЯ ЛИТЕРАТУРА</h2>
+                                <p class="card-text">В этом блоке вы найдете всю необходимую вам литературу</p>
+                                <a href="#">ЧИТАТЬ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--КОНТРОЛЬНЫЕ, КУРСОВЫЕ, ДИПЛОМЫ-->
+        <div class="col-lg-4">
+            <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                <div class="mainflip">
+                    <div class="card bigCardMenu frontside"> <!--Лицевая сторона карточки-->
+                        <div class="card-body text-center">
+                            <p>
+                                <!--https://bootsnipp.com/snippets/featured/team-design-card-flipper-using-bootstrap-4-->
+                                <img class="img-fluid" src="img/Студент.png" alt="студент">
+                            </p>
+                            <h2 class="card-title">КОНТРОЛЬНЫЕ, КУРСОВЫЕ, ДИПЛОМЫ</h2>
+                        </div>
+                    </div>
+                    <div class="backside"><!--Обратная сторона карточки-->
+                        <div class="card">
+                            <div class="card-body text-center mt-4">
+                                <h2 class="card-title">КОНТРОЛЬНЫЕ, КУРСОВЫЕ</h2>
+                                <p class="card-text">В этом блоке вы найдете образцы выполнения различных студенческих
+                                    работ по
+                                    дисциплинам в дорожной отрасли</p>
+                                <a href="#">ЧИТАТЬ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<!--ПОСЛЕДНИЕ НОВОСТИ-->
+<section id="news" class="container news">
+    <div class="row">
+        <div class="col-lg-12">
+            <h2 class="h2_news">ПОСЛЕДНИЕ НОВОСТИ
+            </h2>
+        </div>
+        <div class="col-lg-4">
+            <div class="card-body text-center">
+                <h3 class="card-title">ИНФОРМАЦИЯ О ПЛАТНЫХ ДОРОГАХ</h3>
+                <p class="card-text">С 1 ноября 2016 года в Республике Беларусь
+                    вводятся новые участки платных дорог: км 130 – км 212 автодороги
+                    М-5 Минск-Гомель и км 80 – км 99 автодороги Р-23 Минск-Микашевичи
+                    общей протяженностью 101 км.С 1 ноября 2016 года в Республике Беларусь
+                    вводятся новые участки платных дорог: км 130 – км 212 автодороги М-5
+                    Минск-Гомель и км 80 – км 99 автодороги Р-23 Минск-Микашевичи общей
+                    протяженностью 101 км.</p>
+                <div class="card-link">Источник:
+                    <a href="">Гомельавтодор</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card-body text-center">
+                <h3 class="card-title">ИНФОРМАЦИЯ О ПЛАТНЫХ ДОРОГАХ</h3>
+                <p class="card-text">С 1 ноября 2016 года в Республике Беларусь
+                    вводятся новые участки платных дорог: км 130 – км 212 автодороги
+                    М-5 Минск-Гомель и км 80 – км 99 автодороги Р-23 Минск-Микашевичи
+                    общей протяженностью 101 км.С 1 ноября 2016 года в Республике Беларусь
+                    вводятся новые участки платных дорог: км 130 – км 212 автодороги М-5
+                    Минск-Гомель и км 80 – км 99 автодороги Р-23 Минск-Микашевичи общей
+                    протяженностью 101 км.</p>
+                <div class="card-link">Источник:
+                    <a href="">Гомельавтодор</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card-body text-center">
+                <h3 class="card-title">ИНФОРМАЦИЯ О ПЛАТНЫХ ДОРОГАХ</h3>
+                <p class="card-text">С 1 ноября 2016 года в Республике Беларусь
+                    вводятся новые участки платных дорог: км 130 – км 212 автодороги
+                    М-5 Минск-Гомель и км 80 – км 99 автодороги Р-23 Минск-Микашевичи
+                    общей протяженностью 101 км.С 1 ноября 2016 года в Республике Беларусь
+                    вводятся новые участки платных дорог: км 130 – км 212 автодороги М-5
+                    Минск-Гомель и км 80 – км 99 автодороги Р-23 Минск-Микашевичи общей
+                    протяженностью 101 км.</p>
+                <div class="card-link">Источник:
+                    <a href="">Гомельавтодор</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--НОВОЕ НА САЙТЕ-->
+<section id="newSite" class="container news newSite">
+    <div class="row">
+        <div class="col-lg-12">
+            <h2 class="h2_news">НОВОЕ НА САЙТЕ
+            </h2>
+        </div>
+        <div class="col-lg-6">
+            <div class="card-body">
+                <div class="card-link text-left">В разделе:
+                    <a href="">ТЕХНИКА</a>
+                </div>
+                <h3 class="card-title text-center">АМКОДОР RD-165C, АМКОДОР165H</h3>
+                <img src="img/Автогрейдер.jpg" alt="автогрейдер" class="img-fluid">
+
+                <p class="card-text">Автогрейдеры предназначены для землеройно-
+                    профилировочных работ при строительстве и содержании дорог.
+                    Он может использоваться на работах при устройстве
+                    оснований дорожной одежды...</p>
+                <div class="d-flex justify-content-end">
+                    <button>
+                        <a href="">Подробнее</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="card-body">
+                <div class="card-link text-left">В разделе:
+                    <a href="">ТЕХНИКА</a>
+                </div>
+                <h3 class="card-title text-center">АМКОДОР RD-165C, АМКОДОР165H</h3>
+                <img src="img/Автогрейдер.jpg" alt="автогрейдер" class="img-fluid">
+
+                <p class="card-text">Автогрейдеры предназначены для землеройно-
+                    профилировочных работ при строительстве и содержании дорог.
+                    Он может использоваться на работах при устройстве
+                    оснований дорожной одежды...</p>
+                <div class="d-flex justify-content-end">
+                    <button>
+                        <a href="">Подробнее</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="card-body">
+                <div class="card-link text-left">В разделе:
+                    <a href="">ТЕХНИКА</a>
+                </div>
+                <h3 class="card-title text-center">АМКОДОР RD-165C, АМКОДОР165H</h3>
+                <img src="img/Автогрейдер.jpg" alt="автогрейдер" class="img-fluid">
+
+                <p class="card-text">Автогрейдеры предназначены для землеройно-
+                    профилировочных работ при строительстве и содержании дорог.
+                    Он может использоваться на работах при устройстве
+                    оснований дорожной одежды...</p>
+                <div class="d-flex justify-content-end">
+                    <button>
+                        <a href="">Подробнее</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="card-body">
+                <div class="card-link text-left">В разделе:
+                    <a href="">ТЕХНИКА</a>
+                </div>
+                <h3 class="card-title text-center">АМКОДОР RD-165C, АМКОДОР165H</h3>
+                <img src="img/Автогрейдер.jpg" alt="автогрейдер" class="img-fluid">
+
+                <p class="card-text">Автогрейдеры предназначены для землеройно-
+                    профилировочных работ при строительстве и содержании дорог.
+                    Он может использоваться на работах при устройстве
+                    оснований дорожной одежды...</p>
+                <div class="d-flex justify-content-end">
+                    <button>
+                        <a href="">Подробнее</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--ПОДВАЛ-->
+<footer id="footer" class="footer">
+    <div class="container-fluid">
+        <div class="row justify-content-between">
+            <!--КОНТАКТЫ-->
+            <div class="col-lg-3">
+                <div class="row justify-content-start">
+                    <div class="col-lg-11 offset-lg-1">
+                        <div class="footerContacts">
+                            <p>Если у Вас появились какие-то вопросы, замечания, предложения, просьбы обращайтесь</p>
+                            <div class="row justify-content-start align-items-center contacts">
+                                <a class="col-lg-2" href="#"><img src="img/Email.png" alt="E-mail"></a>
+                                <a class="col-lg-10" href="#">
+                                    admin@avtodorogi.by
+                                </a>
+                            </div>
+                            <div class="row justify-content-start align-items-center contacts">
+                                <a class="col-lg-2" href="#"><img src="img/Skype.png" alt="Skype"></a>
+                                <a class="col-lg-10" href="#">
+                                    avtodorogi.by
+                                </a>
+                            </div>
+                            <div class="row justify-content-start align-items-center contacts">
+                                <a class="col-lg-2" href="#"><img src="img/Viber.png" alt="Viber"></a>
+                                <a class="col-lg-10" href="#">
+                                    375 (29) 399-45-63
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--О ПРОЕКТЕ-->
+            <div class="col-lg-2">
+                <div class="footerProject">
+                    <ul>
+                        <a href="#">
+                            <li>О проекте</li>
+                        </a>
+                        <a href="#">
+                            <li>Рекламодателям</li>
+                        </a>
+                        <a href="#">
+                            <li>Правила сайта</li>
+                        </a>
+                        <a href="#">
+                            <li>Пользовательское соглашение</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <!--МЕНЮ-->
+            <div class="col-lg-2">
+                <div class="footerMenu">
+                    <ul>
+                        <a href="#">
+                            <li>Новости</li>
+                        </a>
+                        <a href="#">
+                            <li>Организации РБ</li>
+                        </a>
+                        <a href="#">
+                            <li>Технологии</li>
+                        </a>
+                        <a href="#">
+                            <li>Техника</li>
+                        </a>
+                        <a href="#">
+                            <li>Библиотека</li>
+                        </a>
+                        <a href="#">
+                            <li>Студентам</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <!--СОЦИАЛЬНЫЕ СЕТИ-->
+            <div class="col-lg-2">
+                <div class="footerNetworks">
+                    <div>
+                        <p>Подписывайтесь</p>
+                        <a href="#"><img src="img/OK.png" alt="Одноклассники"></a>
+                        <a href="#"><img src="img/ВК.png" alt="ВКонтакте"></a>
+                    </div>
+                </div>
+            </div>
+            <!--ЛОГОТИП-->
+            <div class="col-lg-3">
+                <div>
+                    <img src="img/Logo_2.png" alt="Logo">
+                </div>
+            </div>
+        </div>
+</footer>
+
+<script src="js/libs.min.js"></script>
+<script src="js/common.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+</html>

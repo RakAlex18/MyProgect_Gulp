@@ -1,0 +1,206 @@
+/*СПЕЦИФИКАЦИЯ*/
+html
+  background-color: #d8d8d8
+
+body
+  margin: 0 auto
+  max-width: 1200px
+  background-color: white
+  font-family: 'Roboto', sans-serif;
+
+header
+  background-color: #464f58
+  color: white
+  font-size: 0.875em
+  font-weight: 500
+/*РЕГИСТРАЦИЯ И ВОЙТИ*/
+.registr__item a
+  font-size: 1em
+  font-weight: 500
+  color: white
+  &:hover
+    color:#ef6c00
+/*ВЕРХНЯЯ НАВГАЦИОННАЯ ПАНЕЛЬ*/
+#menu
+  border-top: 1px solid white
+  background-color: #464f58
+  .nav-link
+    color: white
+    font-size: 1em
+    font-weight: 400
+  div
+    ul
+      li
+        &:hover
+          background: #ef6c00
+/*ПОИСК*/
+.search button
+  /*изменил цвет рамки кнопки поиска*/
+  border: 1px solid #FFFFFF
+  /*изменил цвет текста на кнопке поиска*/
+  color: white
+  &:hover
+    /*меняю цвет кнопки при наведении*/
+    background-color: #ef6c00
+    /*меняю цвет рамки при наведении*/
+    border: white
+/*СЛАЙДЕР*/
+.carouselImages
+  /*отступы сверху и снизу*/
+  margin: 20px auto
+/*БЛОК С ПОЗДРАВЛЕНИЯМИ*/
+.congratulations
+  width: 90%
+  padding-bottom: 20px
+  h1
+    color: #ef6c00
+    font-weight: 700
+    font-size: 28px
+  b
+    color: #ef6c00
+  p
+    color: #0b0b0b
+    font-size: 18px
+/*МЕНЮ С БОЛЬШИМИ ИКОНКАМИ*/
+.bigMenu
+  background-color: #464f58
+    padding-top: 30px
+
+  .bigCardMenu
+    height: 300px
+    margin: 15px 0 15px 0
+    h2
+      color: #464f58
+      font-size: 26px
+      font-weight: 700
+      width: 100%
+/*поворачивающееся меню с сайта https://bootsnipp.com/snippets/featured/team-design-card-flipper-using-bootstrap-4*/
+.image-flip:hover .backside
+  transform: rotateY(0deg)
+  border-radius: .25rem
+.image-flip.hover .backside
+  transform: rotateY(0deg)
+  border-radius: .25rem
+.image-flip:hover .frontside
+  transform: rotateY(180deg)
+.image-flip.hover .frontside
+  transform: rotateY(180deg)
+.mainflip
+  transition: 1.4s
+  transform-style: preserve-3d
+  position: relative
+.frontside
+  position: relative
+  z-index: 2
+  margin-bottom: 30px
+  backface-visibility: hidden
+  transition: 1.4s
+  transform-style: preserve-3d
+.backside
+  position: absolute
+  top: 0
+  left: 0
+  background: white
+  transform: rotateY(-180deg)
+  box-shadow: 5px 7px 9px -4px rgb(158, 158, 158)
+  backface-visibility: hidden
+  transition: 1s
+  transform-style: preserve-3d
+  .card
+   height: 300px
+   a
+    color: #ef6c00
+    font-size: 28px
+    font-weight: 700
+   h2
+    color: #ef6c00
+    font-weight: 700
+/*конец поворачивающееся меню с сайта https://bootsnipp.com/snippets/featured/team-design-card-flipper-using-bootstrap-4*/
+/*Раздел ПОСЛЕДНИЕ НОВОСТИ*/
+.news
+  .card-body
+    min-height: 300px
+    cursor: pointer
+    border-top: 5px solid #ef6c00
+    transition: 1s
+    background: #fafafa
+    &:hover
+      background: #d8d8d8
+  .h2_news
+    color: #464f58
+    font-weight: 700
+    /*25/16=1.56em*/
+    font-size: 1.56em
+    margin: 30px 0 5px 0
+  p
+    text-align: justify
+    padding: 15px 0
+    /*14/16=0.875em*/
+    font-size: 0.875em
+    font-weight: 400
+  a
+    color: #ef6c00
+  h3
+    color: #ef6c00
+    font-size: 1.375em
+    font-weight: 500
+
+/*НОВОЕ НА САЙТЕ*/
+.newSite
+  .card-body
+    border: 2px solid #0b0b0b
+    border-radius: 15px
+    margin-top: 15px
+  h3
+    color: #464f58
+    font-weight: 500
+    font-size: 1.125em
+    padding-top: 10px
+  p
+    text-align: justify
+    padding: 15px 0
+    /*14/16=0.875em*/
+    font-size: 0.875em
+    font-weight: 400
+  button
+    background-color: #ef6c00
+    a
+      color: #FFFFFF
+      text-decoration: none
+      /*ПОДВАЛ*/
+.footer
+  background-color: #464f58
+  margin-top: 15px
+  font-size: 0.75em
+  /*12/16=0.75*/
+  color: white
+  overflow: hidden
+  ul
+   padding: 0
+  a
+   color: white
+   text-decoration: none
+  li
+   list-style-type: none
+.contacts
+  margin-top: 10px
+.footerContacts
+  margin-top: 15px
+  a:hover
+    color: #ef6c00
+.footerProject
+  margin-top: 15px
+  li
+    margin-top: 10px
+  a:hover
+    color: #ef6c00
+.footerMenu
+  margin-top: 15px
+  li
+    margin-top: 10px
+  a:hover
+    color: #ef6c00
+.footerNetworks
+  margin-top: 15px
+  a
+    margin-left: 10px
